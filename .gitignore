@@ -1,0 +1,5 @@
+*.iml
+.DS_Store
+app.cfg
+*.db
+.idea/
