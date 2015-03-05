@@ -3,3 +3,4 @@
 app.cfg
 *.db
 .idea/
+*.pyc

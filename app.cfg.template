@@ -1,0 +1,6 @@
+[service.vpass]
+user_id: #vpass_user_id#
+password: #vpass_user_pass#
+
+[pushbullet]
+api_key: #pushbullet_api_key#
