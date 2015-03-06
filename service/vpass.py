@@ -77,7 +77,7 @@ class Vpass():
             text = "month_amount: " + str(month_amount[0]) + "\n" + text
 
             # notify pushbullet
-            success, push = pb.push_note(pull_down_date.strftime('%Y-%m-%d pulldown update') + datetime.datetime.now().strftime('(%Y-%m-%d %H:%M:%S)'), text)
+            push = pb.push_note(pull_down_date.strftime('%Y-%m-%d pulldown update') + datetime.datetime.now().strftime('(%Y-%m-%d %H:%M:%S)'), text)
 
         return pull_down_date
 
