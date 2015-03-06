@@ -1,6 +1,6 @@
-# creca_caution
+# crecabullet
 
-creca_caution is push newer your credit-card's utilization with [pushbullet](https://www.pushbullet.com/).
+crecabullet is push newer your credit-card's utilization with [pushbullet](https://www.pushbullet.com/).
 
 ## requirements
 
@@ -10,8 +10,25 @@ creca_caution is push newer your credit-card's utilization with [pushbullet](htt
 
 And make pushbullet account.
 
-## installment
+## Ready
 
-```
+```shell
+$ # sudo yum install gcc libxml2-devel libxslt-devel # Option commands as necessary
+$ sudo easy_install pip
 $ sudo pip install peewee pyquery pushbullet.py
 ```
+
+## Installment
+
+```shell
+$ cd /path/to/dir
+$ git clone https://github.com/takudo/crecabullet.git
+$ cd crecabullet
+$ mv app.cfg.template app.cfg
+$ vi app.cfg
+# edit your information
+
+$ crontab -e
+0 * * * * cd /path/to/dir/crecabullet && python main.py
+```
+
